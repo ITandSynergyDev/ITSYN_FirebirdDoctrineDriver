@@ -1,0 +1,40 @@
+{
+    "name": "kafoso/doctrine-firebird-driver",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kasper Søfren",
+            "email": "soefritz@gmail.com"
+        },
+        {
+            "name": "Uffe Petersen"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Kafoso\\DoctrineFirebirdDriver\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kafoso\\DoctrineFirebirdDriver\\Test\\Resource\\": "tests/resources/Test/Resource",
+            "Kafoso\\DoctrineFirebirdDriver\\Test\\Integration\\": "tests/tests/Test/Integration",
+            "Kafoso\\DoctrineFirebirdDriver\\Test\\Unit\\": "tests/tests/Test/Unit"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "doctrine/annotations": "^1.14",
+        "doctrine/dbal": "^2.9.3",
+        "doctrine/orm": "^2.7",
+        "symfony/cache": "^5.4",
+        "ext-pdo": "*"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^6.2"
+    }
+}
